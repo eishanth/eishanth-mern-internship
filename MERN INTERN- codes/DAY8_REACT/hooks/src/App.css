@@ -1,0 +1,33 @@
+.App {
+  text-align: center;
+}
+
+
+.Header {
+  background-color: #527ed5;
+  align-items: center;
+  min-height: 100px;
+  /* flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  color: white;
+}
+
+#content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(224, 36, 36);
+}
+
+.style-comp{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(36, 224, 142);
+}
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+
+<body>
+    <h1>SIMPLE CALCULATOR</h1>
+
+    <h2>Addition of two numbers:</h2><h3 id="addition"></h3>
+    <h2>Subtraction of two numbers:</h2><h3 id="subtraction"></h3>
+    <h2>Product of two numbers:</h2><h3 id="product"></h3>
+    <h2>Division of two numbers:</h2><h3 id="division"></h3>
+    <h2>Remainder of two numbers:</h2><h3 id="remainder"></h3>
+    <h2>Quotient of two numbers:</h2><h3 id="quotient"></h3>
+</body>
+
+<script>
+    const add = (a, b) => a + b;
+    const sub = (a, b) => a - b;
+    const product = (a, b) => a * b;
+    const division = (a, b) => {
+        if (b === 0) {
+            return "Cannot divide by zero";
+        }
+        return a / b;
+    };
+    const remainder = (a, b) => (b === 0 ? "Undefined (division by zero)" : a % b);
+    const floor = (a,b) => a/b;
+
+    const num1 = parseFloat(prompt("Enter the first number:"));
+    const num2 = parseFloat(prompt("Enter the second number:"));
+
+    document.getElementById("addition").innerHTML = add(num1, num2);
+    document.getElementById("subtraction").innerHTML = sub(num1, num2);
+    document.getElementById("product").innerHTML = product(num1, num2);
+    document.getElementById("division").innerHTML = division(num1, num2);
+    document.getElementById("remainder").innerHTML = remainder(num1, num2);
+    document.getElementById("quotient").innerHTML = Math.floor(num1 / num2);
+</script>
+
+</html>

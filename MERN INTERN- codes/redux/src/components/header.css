@@ -1,0 +1,25 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #322e2e;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+.navbar ul li{
+    margin: 10px;
+}
+
+.header .navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.header .navbar ul li a:hover{
+    color: #ffc107;
+}
+
+.header .navbar .title{
+    color: #fff;
+}

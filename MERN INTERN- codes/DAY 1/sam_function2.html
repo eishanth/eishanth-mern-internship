@@ -1,0 +1,24 @@
+<html>
+<body>
+<h1>hiiiii</h1>
+</body>
+<script>
+function calculateCandies() {
+    let candies = 75; 
+    candies /= 2; 
+    candies /= 2; 
+
+    let angelCandies = candies; 
+    let samCandies = 75 - candies; 
+
+    return { angel: angelCandies, sam: samCandies }; 
+}
+
+let result = calculateCandies();
+console.log(Angel has ${result.angel} candies.);
+console.log(Sam has ${result.sam} candies.);
+
+
+
+</script>
+</html>
