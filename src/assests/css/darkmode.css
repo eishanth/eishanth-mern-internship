@@ -1,0 +1,47 @@
+.dark-mode-toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .dark-mode-toggle {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .dark-mode-toggle.active {
+    background-color: #333;
+    color: #f1f1f1;
+  }
+  
+  .dark-mode-toggle:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Dark Mode Styles */
+  body.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  body.dark-mode header {
+    background-color: #1e1e1e;
+    color: #f1f1f1;
+  }
+  
+  body.dark-mode .hero-container {
+    background-color: #222;
+  }
+  
+  body.dark-mode a {
+    color: #007bff;
+  }
+  
