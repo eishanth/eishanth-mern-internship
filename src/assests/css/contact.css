@@ -1,0 +1,113 @@
+.contact {
+    padding: 0 20px;
+    /* background-color: #f9f9f9; */
+    color: #333;
+    margin: 0;
+  }
+  
+  .contact h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+    color: #222;
+  }
+  
+  .contact p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #f7f7f7;
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #007bff;
+    background-color: #fff;
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.2);
+    outline: none;
+  }
+  
+  .contact-form textarea {
+    height: 150px;
+    resize: vertical;
+  }
+  
+  .contact-form button {
+    padding: 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #0056b3;
+    transform: scale(1.02);
+  }
+  
+  .contact-form button:active {
+    background-color: #004085;
+    transform: scale(0.98);
+  }
+  
+  /* Social Media Section */
+  .social-links {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .social-links a {
+    margin: 0 15px;
+    display: inline-block;
+    color: #333;
+    font-size: 1.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #007bff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-form {
+      padding: 20px;
+    }
+  
+    .contact h2 {
+      font-size: 2.2rem;
+    }
+  
+    .contact p {
+      font-size: 1rem;
+    }
+  }
+  

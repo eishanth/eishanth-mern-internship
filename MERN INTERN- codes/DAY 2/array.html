@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="perfect">Perfect Numbers: </h1>
+    <h1 id="prime">Even prime numbers: </h1>
+    <script>
+        const size = prompt("Enter the size of the array: ");
+        let numbers = [];
+        for (let i = 0; i < size; i++) {
+            var num = parseInt(prompt("Enter the number: "));
+            numbers.push(num);
+        }
+        console.log(numbers);
+        var flag = false;
+        let perfect = [];
+        for(let i=0;i<size;i++){
+            if(numbers[i]==2){
+                flag = true;
+            }
+            var sum = 0;
+            for(let j=1;j<numbers[i];j++){
+                if(numbers[i]%j==0){
+                    sum+=j;
+                }
+            }
+            if(sum==numbers[i]){
+                perfect.push(numbers[i]);
+            }
+        }
+        document.getElementById("perfect").innerHTML = perfect;
+        if(perfect.length==0){
+            alert("No perfect numbers");
+        }else{
+            alert(perfect);
+        }
+        if(flag){
+            alert("even prime number having");
+        }
+        else{
+            alert("Not all numbers are prime");
+        }
+    </script>
+</body>
+</html>

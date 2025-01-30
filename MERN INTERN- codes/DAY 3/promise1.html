@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const person1 = new Promise((resolve, reject)=>{
+            let reached = false
+            if(reached){
+                setTimeout(resolve,5000,"Person1 Reached")
+            }
+            else{
+                reject("Person1 not yet reached")
+            }
+        })
+        const person2  = new Promise((resolve,reject)=>{
+            let reached = false
+            if(reached){
+                setTimeout(resolve,2000,"Person2 Reached")
+            }
+            else{
+                reject("Person2 not yet reached")
+            }
+        })
+        const person3 = new Promise((resolve, reject)=>{
+            let reached = false
+            if(reached){
+                setTimeout(resolve,1000,"Person3 Reached")
+            }
+            else{
+                reject("Person3 not yet reached")
+            }
+        })  
+
+        // person3.then((msg)=>console.log(msg))
+        // .catch((err_msg)=>console.log(err_msg))
+
+        // person1.then((msg)=>console.log(msg))
+        // .catch((err_msg)=>console.log(err_msg))
+
+        // person2.then((msg)=>console.log(msg))
+        // .catch((err_msg)=>console.log(err_msg))
+
+//BUILD IN PROMISES
+
+
+        // Promise.all([person1,person2,person3]).then((msg)=>console.log(msg))
+        // .catch((err_msg)=>console.log(err_msg))
+
+        // Promise.any([person1,person2,person3]).then((msg)=>console.log(msg))
+        // .catch((err_msg)=>console.log(err_msg))
+
+        Promise.allSettled([person1,person2,person3])
+        .then((msg)=>console.log(msg))
+        .catch((err_msg)=>console.log(err_msg))
+
+        // Promise.race([person1,person2,person3])
+        // .then((msg)=>console.log(msg))
+        // .catch((err_msg)=>console.log(err_msg))
+
+    </script>
+</body>
+</html>

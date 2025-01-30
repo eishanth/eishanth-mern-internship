@@ -1,0 +1,132 @@
+.certificates-section {
+  margin-top: 50px;
+  padding: 40px 20px;
+  text-align: center;
+  background: linear-gradient(120deg, #e0eafc, #cfdef3);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.certificates-section h2 {
+  margin-bottom: 30px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #2c3e50;
+  letter-spacing: 2px;
+}
+
+.certificates-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.certificates-slider {
+  display: flex;
+  gap: 25px;
+  transition: transform 0.4s ease-in-out;
+  will-change: transform;
+}
+
+.certificate-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 180px;
+  max-width: 180px;
+  padding: 15px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificate-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.certificate-item .icon {
+  font-size: 50px;
+  color: #3498db;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.certificate-item:hover .icon {
+  color: #2ecc71;
+}
+
+.certificate-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #34495e;
+  text-align: center;
+  margin-top: 10px;
+  text-transform: capitalize;
+}
+
+/* Arrow Styling */
+.arrow {
+  background-color: #3498db;
+  border: none;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 12px;
+  border-radius: 70%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.arrow-left {
+  left: 10px;
+}
+
+.arrow-right {
+  right: 10px;
+}
+
+.arrow:hover {
+  background-color: #0c50d7;
+}
+
+.arrow.disabled {
+  background-color: #bdc3c7;
+  color: #7f8c8d;
+  cursor: not-allowed;
+}
+
+/* .arrow.disabled:hover {
+  background-color: #bdc3c7;
+  transform: none;
+} */
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .certificates-container {
+    flex-direction: column;
+  }
+
+  .certificates-slider {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .certificate-item {
+    min-width: 150px;
+    max-width: 150px;
+  }
+}
